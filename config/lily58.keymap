@@ -42,6 +42,22 @@
             key-positions = <54 53>;
             layers = <0>;
         };
+
+        legacy-escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 0>;
+        };
+    };
+
+    behaviors {
+        grave_escape_mod: grave_escape_mod {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE_MOD";
+            bindings = <&kp GRAVE>, <&kp ESCAPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
+        };
     };
 
     keymap {
