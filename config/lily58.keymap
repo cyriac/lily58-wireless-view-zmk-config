@@ -42,12 +42,6 @@
             key-positions = <54 53>;
             layers = <0>;
         };
-
-        legacy-escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-            layers = <0>;
-        };
     };
 
     keymap {
