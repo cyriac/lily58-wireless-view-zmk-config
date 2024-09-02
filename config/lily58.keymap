@@ -68,11 +68,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp GRAVE     &kp N1  &kp N2  &kp N3            &kp N4  &kp N5                                    &kp N6             &kp N7  &kp N8     &kp N9   &kp N0         &kp BACKSPACE
-&kp TAB       &kp Q   &kp W   &kp F             &kp P   &kp B                                     &kp J              &kp L   &kp U      &kp Y    &kp SEMICOLON  &kp MINUS
-&kp LEFT_ALT  &kp A   &kp R   &kp S             &kp T   &kp G                                     &kp K              &kp N   &kp E      &kp I    &kp O          &kp SQT
-&kp LSHFT     &kp Z   &kp X   &kp C             &kp D   &kp V             &kp LBKT     &kp RBKT   &kp M              &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-                              &kp LEFT_CONTROL  &mo 1   &kp LEFT_COMMAND  &kp SPACE    &kp ENTER  &kp RIGHT_COMMAND  &mo 2   &kp EQUAL
+&kp GRAVE  &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                        &kp N6             &kp N7    &kp N8     &kp N9   &kp N0         &kp BACKSPACE
+&kp TAB    &kp Q   &kp W   &kp F             &kp P         &kp B                                         &kp J              &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp MINUS
+&none      &kp A   &kp R   &kp S             &kp T         &kp G                                         &kp K              &kp N     &kp E      &kp I    &kp O          &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C             &kp D         &kp V             &kp LBKT       &kp RBKT     &kp M              &kp H     &kp COMMA  &kp DOT  &kp FSLH       &mt RSHFT ENTER
+                           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 SPACE  &kp RIGHT_COMMAND  &kp BSLH  &kp EQUAL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
