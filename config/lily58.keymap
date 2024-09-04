@@ -47,6 +47,7 @@
         legacy-escape {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
+            layers = <0>;
         };
     };
 
