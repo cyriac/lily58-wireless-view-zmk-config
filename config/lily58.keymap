@@ -69,7 +69,7 @@
             bindings = <
 &kp GRAVE     &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                        &kp N6             &kp N7    &kp N8     &kp N9   &kp N0         &kp BACKSPACE
 &kp TAB       &kp Q   &kp W   &kp F             &kp P         &kp B                                         &kp J              &kp L     &kp U      &kp Y    &kp SEMICOLON  &kp MINUS
-&lt 3 ESCAPE  &kp A   &kp R   &kp S             &kp T         &kp G                                         &kp K              &kp N     &kp E      &kp I    &kp O          &kp SQT
+&lt 0 ESCAPE  &kp A   &kp R   &kp S             &kp T         &kp G                                         &kp K              &kp N     &kp E      &kp I    &kp O          &kp SQT
 &kp LSHFT     &kp Z   &kp X   &kp C             &kp D         &kp V             &kp LBKT       &kp RBKT     &kp M              &kp H     &kp COMMA  &kp DOT  &kp FSLH       &mt RSHFT ENTER
                               &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 SPACE  &kp RIGHT_COMMAND  &kp BSLH  &kp EQUAL
             >;
@@ -91,26 +91,15 @@
         };
 
         raise_layer {
-            display-name = "Raise";
             bindings = <
-&kp LG(GRAVE)  &trans  &trans  &trans   &trans   &trans                     &trans       &trans     &trans     &trans    &trans     &trans
-&kp GRAVE      &kp N1  &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &trans
-&kp F1         &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&kp F7         &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                               &trans   &trans   &trans   &trans    &trans  &trans       &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans  &msc SCRL_UP
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &msc SCRL_DOWN
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans        &msc SCRL_UP
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans        &msc SCRL_DOWN
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &kp LEFT         &kp DOWN      &kp RIGHT
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
+
+            label = "Raise";
         };
     };
 };
