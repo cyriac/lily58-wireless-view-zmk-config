@@ -91,6 +91,7 @@
         };
 
         raise_layer {
+            display-name = "Raise";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans        &msc SCRL_UP
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans        &msc SCRL_DOWN
@@ -99,7 +100,7 @@
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
 
-            label = "Raise";
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
