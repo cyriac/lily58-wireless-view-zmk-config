@@ -94,7 +94,7 @@
         raise_layer {
             display-name = "Raise";
             bindings = <
-&kp ESPCAPE  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans        &msc SCRL_UP
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans        &msc SCRL_UP
 &trans       &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans        &msc SCRL_DOWN
 &trans       &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp UP_ARROW  &trans
 &trans       &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &kp LEFT         &kp DOWN      &kp RIGHT
