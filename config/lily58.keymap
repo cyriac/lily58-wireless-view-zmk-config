@@ -51,6 +51,11 @@
             key-positions = <1 0>;
             layers = <0>;
         };
+
+        fat-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <48 49>;
+        };
     };
 
     keymap {
